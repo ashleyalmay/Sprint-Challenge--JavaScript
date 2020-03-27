@@ -16,10 +16,6 @@
 
 // How much did tyrannosaurus weigh?
 const dino = {
-  name: "tyrannosaurus",
-  diet: "carnivorous",
-  length: "12m",
-  period: "Late Cretaceous",
   weight: function() {
     return "7000kg";
   }
@@ -158,9 +154,15 @@ for (let i = 0; i < graduates.length; i++) {
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
+function getunversity(graduates, index) {
+  return `${graduates[index].university}`;
+}
+
 const unisWithUni = [];
-for (let i = 0; i < graduates.length; 1++) {
-  unisWithUni.push(graduates, i);
+
+for (let i = 0; i < graduates.length; i++) {
+  if (getunversity(graduates, i))
+    unisWithUni.push(getunversity(graduates, i)) == "university";
 }
 console.log(unisWithUni);
 
@@ -237,6 +239,9 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
+zooAnimals.forEach(function(item) {
+  return displayNames.push(item.animal_name) ${item.scientific_name};
+});
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -246,6 +251,9 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 */
 
 const lowCaseAnimalNames = [];
+const zoo = zooAnimals.map(function(item,) {
+  return item.lowCaseAnimalNames.toLowerCase();
+});
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
@@ -254,6 +262,9 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = [];
+const zoofilter = zooAnimals.filter(function(element) {
+  return element.population < 5;
+});
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
@@ -262,6 +273,9 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = 0;
+const zooreduce = zooAnimals.reduce(function(accumulator, item){
+  return accumulator + item.population;
+}, 0);
 console.log(populationTotal);
 
 /*
