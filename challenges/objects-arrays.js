@@ -16,47 +16,43 @@
 
 // How much did tyrannosaurus weigh?
 const dino = {
-  weight: function() {
-    return "7000kg";
-  }
-};
-console.log(dino.weight());
-
-// What was the diet of a velociraptor?
-const dino1 = {
-  diet: function() {
-    return "carnivorous";
-  }
-};
-
-console.log(dino1.diet());
-
-// How long was a stegosaurus?
-const dino2 = {
-  length: function() {
-    return "9m";
-  }
-};
-
-console.log(dino2.length());
-
-// What time period did tyrannosaurus live in?
-const dino3 = {
-  period: function() {
-    return "Late Cretaceous";
-  }
-};
-
-console.log(dino3.period());
-
-// Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-const dino4 = {
+  name: `tyrannosaurus`,
+  diet: `carnivorous`,
+  weight: `7000kg`,
+  length: `12m`,
+  period: `Late Cretaceous`,
   sound: function() {
     return "RAWERSRARARWERSARARARRRR!";
   }
 };
+console.log(dino.weight);
 
-console.log(dino4.sound());
+// What was the diet of a velociraptor?
+const dino1 = {
+  name: `stegosaurus`,
+  diet: `herbivorous`,
+  weight: `2000kg`,
+  length: `9m`,
+  period: `Late Jurassic`
+};
+console.log(dino1.diet);
+
+// How long was a stegosaurus?
+const dino2 = {
+  name: `velociraptor`,
+  diet: `carnivorous`,
+  weight: `15kg`,
+  length: `1.8m`,
+  period: `Late Cretaceous`
+};
+console.log(dino2.length);
+
+// What time period did tyrannosaurus live in?
+console.log(dino.period);
+
+// Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
+
+console.log(dino.sound());
 
 // ==== Arrays ====
 
