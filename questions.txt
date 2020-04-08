@@ -1,0 +1,47 @@
+Describe the biggest difference between .forEach & .map.
+
+-forEach() calls a provided callback function once for each element in an array in ascending order. It is not invoked for index properties that have been deleted or are uninitialized.
+
+-map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+
+-forEach changes the current array and map() gives you a new array
+
+What is the difference between a function and a method?
+
+-A method is a piece of code that is called by name that is associated with an object
+-A function is a piece of code that is called by name and it can be passed data and return data
+
+-class Car {
+// function all of it 
+  constructor(model, milesPerGallon) {
+    
+   // this is method
+    this.model = model;
+    this.milesPerGallon = milesPerGallon;
+    this.tank = 0;
+    this.odometer = 0;
+  }
+
+What is closure?
+-function with in a function 
+
+Describe the four rules of the 'this' keyword.
+-1. Window Binding - if none of the other rules apply "this" defaults to the window - unless you are in strict mode in which case it returns undefined 
+2.  Implicit Binding 
+//most common rule - found in 80% of use cases
+// when the function is invoked - look to the left of the dot - that is what "this" refers to
+// only applies to objects with methods
+  3. Explicit Binding 
+// Call - will immediately invoke the function / .call you pass in arguments 1 by 1
+// Apply - will immediately invoke the function / .apply you pass in arguments as an array
+// Bind - you pass in arguments 1 by 1 but it does not immediately invoke the function. It returns a brand new function that can be invoked later
+// all of the above allow us to explicitly state what the "this" keyword refers to.
+  4. New Binding 
+// using the new keyword constructs a new object and "this" points to it
+// when a function is invoked as a constructor function using the new keyword "this" points to the new object that's created 
+
+
+Why do we need super() in an extended class?
+-thats what calls to the parent 
+
+
